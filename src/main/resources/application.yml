@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/forsample?characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: abcd1234
+  jpa:
+    database: mysql
+    show-sql: true  #在日志中现实SQL语句
+    hibernate:
+      ddl-auto: update #Hibernate ddl auto (validate|create|create-drop|update)
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect # 指定数据库方言
